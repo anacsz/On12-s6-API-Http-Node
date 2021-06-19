@@ -5735,3 +5735,15 @@ const data = [{
     ]
   }
 ]
+
+let brasil = data[0]
+let estados = brasil.estados
+
+estados.forEach(estado => {
+  console.log("Nome do estado:" + estado.nome, "Sigla:" + estado.sigla, "Cidades:")
+
+  estado.cidades.forEach(cidade => {
+    console.log(cidade);
+  })
+  console.log(" ")
+})
